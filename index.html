@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Inicia sesión para acceder al portfolio de Mauro Monje.">
+	<meta name="theme-color" content="#f5f4ef">
+	<title>Iniciar sesión | Mauro Monje</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body class="pagina pagina-registro">
+	<header class="encabezado">
+		<a class="marca" href="bienvenida.html" aria-label="Mauro Monje, ir a bienvenida">
+			<span class="marca-simbolo" aria-hidden="true">M</span>
+			<span class="marca-texto">Mauro Monje</span>
+		</a>
+		<p class="encabezado-nota">Portfolio personal <span aria-hidden="true">·</span> Argentina</p>
+	</header>
+
+	<main class="contenido-principal">
+		<section class="panel-registro" aria-labelledby="titulo-login">
+			<div class="registro-intro">
+				<p class="sobretitulo"><span class="punto-acento" aria-hidden="true"></span> Acceso al portfolio</p>
+				<h1 id="titulo-login">Qué bueno <em>tenerte acá.</em></h1>
+				<p class="texto-intro">Inicia sesión para continuar y conocer mi recorrido en desarrollo web.</p>
+			</div>
+
+			<form class="formulario" id="formulario-login" action="portfolio.html" method="post">
+				<div class="campo">
+					<label for="correo">Correo electrónico</label>
+					<input id="correo" name="correo" type="email" autocomplete="username" placeholder="nombre@correo.com" required>
+				</div>
+				<div class="campo">
+					<label for="contrasena">Contraseña</label>
+					<input id="contrasena" name="contrasena" type="password" autocomplete="current-password" placeholder="Tu contraseña" required>
+				</div>
+				<button class="boton boton-principal" type="submit">Iniciar sesión <span aria-hidden="true">↗</span></button>
+				<p class="nota-demo">Acceso de demostración: cualquier correo válido y una contraseña permiten continuar. No se guardan tus datos.</p>
+				<p class="alternativa"><a href="bienvenida.html">Volver a bienvenida</a></p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="pie-pagina">
+		<p>© 2026 Mauro Monje</p>
+		<p>Hecho con curiosidad y cuidado.</p>
+	</footer>
+	<script src="script.js" defer></script>
+</body>
+</html>
