@@ -28,17 +28,20 @@
 				<p class="texto-intro">Inicia sesión para continuar y conocer mi recorrido en desarrollo web.</p>
 			</div>
 
-			<form class="formulario" id="formulario-login" action="portfolio.html" method="post">
+			<form class="formulario" id="formulario-login">
 				<div class="campo">
 					<label for="correo">Correo electrónico</label>
 					<input id="correo" name="correo" type="email" autocomplete="username" placeholder="nombre@correo.com" required>
 				</div>
 				<div class="campo">
 					<label for="contrasena">Contraseña</label>
-					<input id="contrasena" name="contrasena" type="password" autocomplete="current-password" placeholder="Tu contraseña" required>
+					<input id="contrasena" name="contrasena" type="password" autocomplete="current-password" placeholder="Mínimo 8 caracteres" minlength="8" required>
 				</div>
-				<button class="boton boton-principal" type="submit">Iniciar sesión <span aria-hidden="true">↗</span></button>
-				<p class="nota-demo">Acceso de demostración: cualquier correo válido y una contraseña permiten continuar. No se guardan tus datos.</p>
+				<button class="boton boton-principal" id="boton-enviar" type="submit">Iniciar sesión <span aria-hidden="true">↗</span></button>
+				<p class="nota-demo">Es una demostración para practicar JavaScript: la cuenta se guarda en este navegador y no sirve como autenticación segura para un sitio real.</p>
+				<p id="mensaje-login" role="status" aria-live="polite"></p>
+				<p class="alternativa"><span id="texto-alternativa">¿Todavía no tienes una cuenta?</span> <button class="boton-texto" id="alternar-modo" type="button">Crear cuenta</button></p>
+				<button class="boton boton-secundario" id="borrar-datos" type="button" hidden>Eliminar cuenta y sesión guardadas</button>
 				<p class="alternativa"><a href="bienvenida.html">Volver a bienvenida</a></p>
 			</form>
 		</section>

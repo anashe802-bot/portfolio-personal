@@ -273,6 +273,25 @@ h1 em {
     transition: color 160ms ease;
 }
 
+.boton-texto {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--tinta);
+    font: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+
+.boton-secundario {
+    border: 1px solid var(--linea);
+    background: transparent;
+    color: var(--tinta);
+    cursor: pointer;
+}
+
 .pie-pagina {
     min-height: 74px;
     border-top: 1px solid rgb(23 34 30 / 12%);
